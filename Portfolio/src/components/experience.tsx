@@ -1,5 +1,5 @@
 import React from "react";
-
+import Card from "./card";
 interface ExperienceEntry {
   title: string;
   duration: string;
@@ -7,7 +7,7 @@ interface ExperienceEntry {
   responsibilities: string[];
 }
 
-const Experience: React.FC = () => {
+const Experience = () => {
   const experiences: ExperienceEntry[] = [
     {
       title: "Office Manager, Shelly G Therapy",
@@ -33,6 +33,19 @@ const Experience: React.FC = () => {
   ];
 
   return (
+
+    // <div className="m-8">
+    
+    //   <section id="experience">
+    //     {experiences.map((experience, index) => (
+    //       <Card key={index} 
+    //       title={experience.title} 
+    //       responsibilities={experience.responsibilities} />
+    //     ))}
+    //   </section>
+    // </div>
+
+
     <div className="m-8">
      
       <section id="experience">
